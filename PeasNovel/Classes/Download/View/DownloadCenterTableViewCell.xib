@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="DownloadCenterTableViewCell" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="122.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="Bz4-NU-k1G">
+                        <rect key="frame" x="16" y="11.5" width="80" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="ILN-0h-L3f"/>
+                            <constraint firstAttribute="height" constant="100" id="bEX-Z9-m9r"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiy-v8-btp">
+                        <rect key="frame" x="112" y="27.5" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIz-ef-33y">
+                        <rect key="frame" x="112" y="53.5" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKf-G3-ill">
+                        <rect key="frame" x="112" y="77.5" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39f-L5-cLd">
+                        <rect key="frame" x="304" y="44" width="35" height="35"/>
+                        <state key="normal" image="shanchu-2"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2N-2r-Zpz">
+                        <rect key="frame" x="150" y="71.5" width="54" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="重新下载">
+                            <color key="titleColor" red="1" green="0.3529411764705882" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bz4-NU-k1G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="3ZO-5r-Wjp"/>
+                    <constraint firstItem="oiy-v8-btp" firstAttribute="leading" secondItem="Bz4-NU-k1G" secondAttribute="trailing" constant="16" id="8f1-Mp-ayM"/>
+                    <constraint firstItem="zIz-ef-33y" firstAttribute="leading" secondItem="oiy-v8-btp" secondAttribute="leading" id="FaP-3S-XY6"/>
+                    <constraint firstItem="uKf-G3-ill" firstAttribute="top" secondItem="zIz-ef-33y" secondAttribute="bottom" constant="8" id="J58-Lr-JCR"/>
+                    <constraint firstItem="oiy-v8-btp" firstAttribute="top" secondItem="Bz4-NU-k1G" secondAttribute="top" constant="16" id="OjB-Mm-kil"/>
+                    <constraint firstItem="V2N-2r-Zpz" firstAttribute="leading" secondItem="uKf-G3-ill" secondAttribute="trailing" constant="5" id="T1G-aB-EwA"/>
+                    <constraint firstItem="uKf-G3-ill" firstAttribute="leading" secondItem="zIz-ef-33y" secondAttribute="leading" id="cSp-zZ-Xii"/>
+                    <constraint firstAttribute="trailing" secondItem="39f-L5-cLd" secondAttribute="trailing" constant="31" id="eEM-eA-815"/>
+                    <constraint firstItem="zIz-ef-33y" firstAttribute="top" secondItem="oiy-v8-btp" secondAttribute="bottom" constant="8" id="kXL-Nd-fVI"/>
+                    <constraint firstItem="V2N-2r-Zpz" firstAttribute="centerY" secondItem="uKf-G3-ill" secondAttribute="centerY" id="l9W-fh-8cP"/>
+                    <constraint firstItem="Bz4-NU-k1G" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qdd-mx-b9A"/>
+                    <constraint firstItem="39f-L5-cLd" firstAttribute="centerY" secondItem="Bz4-NU-k1G" secondAttribute="centerY" id="wDb-te-gCe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorLabel" destination="zIz-ef-33y" id="cfu-FP-vov"/>
+                <outlet property="cover" destination="Bz4-NU-k1G" id="8QK-AG-h3v"/>
+                <outlet property="deletebtn" destination="39f-L5-cLd" id="fgG-M5-FKA"/>
+                <outlet property="desclabel" destination="uKf-G3-ill" id="hhh-a0-dT3"/>
+                <outlet property="reloadBtn" destination="V2N-2r-Zpz" id="yFK-5X-OBi"/>
+                <outlet property="titleLabel" destination="oiy-v8-btp" id="RRa-RJ-Xpo"/>
+            </connections>
+            <point key="canvasLocation" x="94.400000000000006" y="122.78860569715144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group" width="106" height="139.5"/>
+        <image name="shanchu-2" width="35" height="35"/>
+    </resources>
+</document>

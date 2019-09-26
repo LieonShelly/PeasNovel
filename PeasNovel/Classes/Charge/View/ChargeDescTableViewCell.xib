@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="190" id="KGk-i7-Jjw" customClass="ChargeDescTableViewCell" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1、全站免广告阅读，阅读更畅快" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qX-gZ-pQP">
+                        <rect key="frame" x="16" y="48.5" width="354" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Jfm-VX-Qvw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2、会员独享智能语音朗读功能，听书更流畅。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8K-uP-yRL">
+                        <rect key="frame" x="16" y="76.5" width="354" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="0Be-Oz-yGY"/>
+                            <constraint firstAttribute="height" constant="18" id="wJG-oe-RCp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3、会员尊贵特殊标识。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnm-va-Rrt">
+                        <rect key="frame" x="16" y="104.5" width="354" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="blU-Ut-40C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会员福利" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3L-xe-IhK">
+                        <rect key="frame" x="16" y="13" width="69.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Cnm-va-Rrt" firstAttribute="top" secondItem="e8K-uP-yRL" secondAttribute="bottom" constant="10" id="G6h-2c-U3k"/>
+                    <constraint firstItem="K3L-xe-IhK" firstAttribute="leading" secondItem="2qX-gZ-pQP" secondAttribute="leading" id="N3v-wR-Rn8"/>
+                    <constraint firstItem="Cnm-va-Rrt" firstAttribute="trailing" secondItem="e8K-uP-yRL" secondAttribute="trailing" id="OPo-w5-oeq"/>
+                    <constraint firstItem="e8K-uP-yRL" firstAttribute="top" secondItem="2qX-gZ-pQP" secondAttribute="bottom" constant="10" id="Uke-MP-ynG"/>
+                    <constraint firstItem="e8K-uP-yRL" firstAttribute="trailing" secondItem="2qX-gZ-pQP" secondAttribute="trailing" id="Vml-yy-OP7"/>
+                    <constraint firstItem="K3L-xe-IhK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Xvz-4I-caZ"/>
+                    <constraint firstItem="Cnm-va-Rrt" firstAttribute="leading" secondItem="e8K-uP-yRL" secondAttribute="leading" id="dQO-7i-dSy"/>
+                    <constraint firstItem="2qX-gZ-pQP" firstAttribute="top" secondItem="K3L-xe-IhK" secondAttribute="bottom" constant="15" id="hYS-nG-Zdv"/>
+                    <constraint firstAttribute="trailing" secondItem="2qX-gZ-pQP" secondAttribute="trailing" constant="10" id="nxg-ea-v2c"/>
+                    <constraint firstItem="2qX-gZ-pQP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="r57-CY-dfG"/>
+                    <constraint firstAttribute="trailing" secondItem="2qX-gZ-pQP" secondAttribute="trailing" constant="10" id="sWQ-6t-4Cd"/>
+                    <constraint firstItem="e8K-uP-yRL" firstAttribute="leading" secondItem="2qX-gZ-pQP" secondAttribute="leading" id="vZb-mT-ibd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="185.59999999999999" y="219.49025487256372"/>
+        </tableViewCell>
+    </objects>
+</document>

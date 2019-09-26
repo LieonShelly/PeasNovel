@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BookShlfRefreshFooterContent" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gZ6-rY-lH0">
+                    <rect key="frame" x="78" y="16" width="190" height="32.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32.5" id="9K1-dW-P03"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="~">
+                                <attributes>
+                                    <color key="NSColor" red="0.74117647058823533" green="0.76078431372549016" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="没有更多，赶快去">
+                                <attributes>
+                                    <color key="NSColor" red="0.74117647058823533" green="0.76078431372549016" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" usesAppearanceFont="YES"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="书城">
+                                <attributes>
+                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="NSColor" red="0.0" green="0.81176470588235294" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" usesAppearanceFont="YES"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="看看吧">
+                                <attributes>
+                                    <color key="NSColor" red="0.74117647058823533" green="0.76078431372549016" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" usesAppearanceFont="YES"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="~">
+                                <attributes>
+                                    <color key="NSColor" red="0.74117647058823533" green="0.76078431372549016" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name=".AppleSystemUIFont"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fue-K3-TNm" userLabel="努力加载中…">
+                    <rect key="frame" x="134.5" y="24" width="77" height="16"/>
+                    <string key="text">努力加载中…
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.61176470589999998" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s1H-0k-hee">
+                    <rect key="frame" x="104.5" y="22" width="20" height="20"/>
+                    <color key="tintColor" red="0.49800121780000001" green="0.54236429929999996" blue="0.68628615140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Piq-ZZ-axc"/>
+                        <constraint firstAttribute="width" constant="20" id="YmZ-x4-7iu"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fue-K3-TNm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5VT-Dl-3bw"/>
+                <constraint firstItem="Fue-K3-TNm" firstAttribute="leading" secondItem="s1H-0k-hee" secondAttribute="trailing" constant="10" id="Ajg-OZ-SZ4"/>
+                <constraint firstItem="gZ6-rY-lH0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ctb-J8-ryq"/>
+                <constraint firstItem="Fue-K3-TNm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VCT-n1-B1N"/>
+                <constraint firstItem="gZ6-rY-lH0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eSG-RC-V4K"/>
+                <constraint firstItem="s1H-0k-hee" firstAttribute="centerY" secondItem="Fue-K3-TNm" secondAttribute="centerY" id="nDt-6h-Zd5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn" destination="gZ6-rY-lH0" id="TUM-GW-anW"/>
+                <outlet property="imageView" destination="s1H-0k-hee" id="tMp-CW-RAO"/>
+                <outlet property="label" destination="Fue-K3-TNm" id="4Dv-b2-oYQ"/>
+            </connections>
+            <point key="canvasLocation" x="88.405797101449281" y="-125.89285714285714"/>
+        </view>
+    </objects>
+</document>

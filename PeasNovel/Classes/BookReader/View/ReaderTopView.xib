@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReaderTopView" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrj-Wy-DOB">
+                    <rect key="frame" x="15" y="71" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="AHF-zm-7fX"/>
+                        <constraint firstAttribute="width" constant="33" id="Lj5-Cu-RGt"/>
+                    </constraints>
+                    <state key="normal" title="    " image="reader_back"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0KM-A2-mwN">
+                    <rect key="frame" x="206" y="57.5" width="150" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2X-BF-aZU">
+                            <rect key="frame" x="58" y="13.5" width="44" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="idO-oX-AC7"/>
+                                <constraint firstAttribute="height" constant="33" id="ii5-IV-YOx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="分享"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToZ-Zt-JM2">
+                            <rect key="frame" x="117" y="16.5" width="33" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="33" id="Ypd-1l-cyl"/>
+                                <constraint firstAttribute="height" constant="33" id="wvO-lK-niS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="26"/>
+                            <state key="normal" title="...">
+                                <color key="titleColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie0-D0-a8t">
+                            <rect key="frame" x="-1" y="13.5" width="44" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="SOl-QQ-s86"/>
+                                <constraint firstAttribute="height" constant="33" id="Wdx-Pr-mZM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="听书"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0to-MK-xpE"/>
+                        <constraint firstAttribute="width" constant="150" id="Dkl-Wg-hCL"/>
+                        <constraint firstItem="B2X-BF-aZU" firstAttribute="leading" secondItem="ie0-D0-a8t" secondAttribute="trailing" constant="15" id="Kmo-zZ-Veu"/>
+                        <constraint firstItem="ToZ-Zt-JM2" firstAttribute="leading" secondItem="B2X-BF-aZU" secondAttribute="trailing" constant="15" id="Nvv-t5-VDh"/>
+                        <constraint firstAttribute="trailing" secondItem="ToZ-Zt-JM2" secondAttribute="trailing" id="QoK-2Z-x26"/>
+                        <constraint firstItem="ie0-D0-a8t" firstAttribute="centerY" secondItem="B2X-BF-aZU" secondAttribute="centerY" id="uTi-Qq-Za5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0KM-A2-mwN" secondAttribute="trailing" constant="16" id="2b2-mp-rMA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nrj-Wy-DOB" secondAttribute="bottom" constant="10" id="CiL-As-fkX"/>
+                <constraint firstItem="nrj-Wy-DOB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Clh-Zg-Ep6"/>
+                <constraint firstItem="ToZ-Zt-JM2" firstAttribute="centerY" secondItem="nrj-Wy-DOB" secondAttribute="centerY" constant="3" id="FEg-Yh-Fkd"/>
+                <constraint firstItem="B2X-BF-aZU" firstAttribute="centerY" secondItem="nrj-Wy-DOB" secondAttribute="centerY" id="Rc7-DE-70U"/>
+                <constraint firstItem="0KM-A2-mwN" firstAttribute="centerY" secondItem="nrj-Wy-DOB" secondAttribute="centerY" id="ipC-qS-D6m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backBtn" destination="nrj-Wy-DOB" id="Ba0-A2-eF5"/>
+                <outlet property="listenBtn" destination="ie0-D0-a8t" id="Ag8-E4-Oda"/>
+                <outlet property="mroeBtn" destination="ToZ-Zt-JM2" id="wN6-8r-hKb"/>
+                <outlet property="shareBtn" destination="B2X-BF-aZU" id="sCe-4K-5Hj"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="-45"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="reader_back" width="33" height="33"/>
+    </resources>
+</document>

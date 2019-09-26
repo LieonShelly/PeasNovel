@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BUInfoOneTitleCollectionViewCell" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="273" height="273"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="273" height="273"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0da-BY-PxO">
+                        <rect key="frame" x="243" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="eDq-IP-V1z"/>
+                            <constraint firstAttribute="width" constant="20" id="nVF-DD-D9J"/>
+                        </constraints>
+                        <state key="normal" image="ad_close"/>
+                    </button>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帝妃太妖娆 copy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4v-ED-zfK">
+                        <rect key="frame" x="40" y="239" width="233" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="38s-PU-FdJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dw-27-EsA">
+                        <rect key="frame" x="0.0" y="243" width="36" height="16"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.54074807359999999" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="9C5-V3-ce0"/>
+                            <constraint firstAttribute="width" constant="36" id="zpw-Ve-2zB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lDJ-nI-Ww3">
+                        <rect key="frame" x="0.0" y="5" width="273" height="224"/>
+                        <color key="backgroundColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Th-21-QD1">
+                        <rect key="frame" x="253" y="209" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="E8K-5U-Wg0"/>
+                            <constraint firstAttribute="width" constant="20" id="Sms-gC-6qZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="1dw-27-EsA" firstAttribute="leading" secondItem="lDJ-nI-Ww3" secondAttribute="leading" id="0iC-oO-slx"/>
+                <constraint firstItem="lDJ-nI-Ww3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1I5-py-qdT"/>
+                <constraint firstAttribute="trailing" secondItem="lDJ-nI-Ww3" secondAttribute="trailing" id="8fH-gH-Wa2"/>
+                <constraint firstItem="lDJ-nI-Ww3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="FsT-oB-n7C"/>
+                <constraint firstAttribute="bottom" secondItem="c4v-ED-zfK" secondAttribute="bottom" constant="10" id="IGW-lC-Av6"/>
+                <constraint firstItem="c4v-ED-zfK" firstAttribute="leading" secondItem="lDJ-nI-Ww3" secondAttribute="leading" constant="40" id="KoC-t1-uv3"/>
+                <constraint firstAttribute="trailing" secondItem="c4v-ED-zfK" secondAttribute="trailing" id="Uz9-b6-iUV"/>
+                <constraint firstAttribute="trailing" secondItem="0da-BY-PxO" secondAttribute="trailing" constant="10" id="kmV-0Q-JRM"/>
+                <constraint firstItem="3Th-21-QD1" firstAttribute="trailing" secondItem="lDJ-nI-Ww3" secondAttribute="trailing" id="mMh-wS-SKt"/>
+                <constraint firstItem="c4v-ED-zfK" firstAttribute="top" secondItem="lDJ-nI-Ww3" secondAttribute="bottom" constant="10" id="qAa-6H-5TQ"/>
+                <constraint firstItem="1dw-27-EsA" firstAttribute="centerY" secondItem="c4v-ED-zfK" secondAttribute="centerY" id="qle-fX-EWN"/>
+                <constraint firstItem="0da-BY-PxO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="tOK-eC-ooa"/>
+                <constraint firstItem="3Th-21-QD1" firstAttribute="bottom" secondItem="lDJ-nI-Ww3" secondAttribute="bottom" id="xPb-fj-PHn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="273" height="273"/>
+            <connections>
+                <outlet property="adImage" destination="lDJ-nI-Ww3" id="G4t-Sa-P5m"/>
+                <outlet property="closeBtn" destination="0da-BY-PxO" id="QLo-sV-85V"/>
+                <outlet property="logView" destination="3Th-21-QD1" id="bkU-g7-1Ec"/>
+                <outlet property="titleLabel" destination="c4v-ED-zfK" id="lga-dd-am6"/>
+            </connections>
+            <point key="canvasLocation" x="173.59999999999999" y="228.93553223388307"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ad_close" width="60" height="60"/>
+    </resources>
+</document>

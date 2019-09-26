@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReaderBookMarkView" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="187"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S43-Vg-6uP">
+                    <rect key="frame" x="0.0" y="0.0" width="433" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbr-A6-i41">
+                            <rect key="frame" x="320" y="11" width="97" height="22"/>
+                            <state key="normal" title=" 新增书签" image="add_book_mark">
+                                <color key="titleColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84K-OH-TNm">
+                            <rect key="frame" x="232" y="11" width="58" height="22"/>
+                            <state key="normal" title=" 清除" image="delete_book_mark">
+                                <color key="titleColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="bbr-A6-i41" firstAttribute="leading" secondItem="84K-OH-TNm" secondAttribute="trailing" constant="30" id="9tM-aa-0nW"/>
+                        <constraint firstAttribute="height" constant="44" id="V2U-UZ-FV8"/>
+                        <constraint firstItem="bbr-A6-i41" firstAttribute="centerY" secondItem="S43-Vg-6uP" secondAttribute="centerY" id="Y57-Ix-UQo"/>
+                        <constraint firstItem="84K-OH-TNm" firstAttribute="centerY" secondItem="bbr-A6-i41" secondAttribute="centerY" id="ess-z0-flW"/>
+                        <constraint firstAttribute="trailing" secondItem="bbr-A6-i41" secondAttribute="trailing" constant="16" id="tff-65-3YN"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KkU-4f-8EL">
+                    <rect key="frame" x="0.0" y="44" width="433" height="143"/>
+                    <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KkU-4f-8EL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4cd-vs-9mh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="S43-Vg-6uP" secondAttribute="trailing" id="67y-fK-VCG"/>
+                <constraint firstItem="S43-Vg-6uP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8C4-iG-sId"/>
+                <constraint firstItem="S43-Vg-6uP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CTC-4N-Ut2"/>
+                <constraint firstItem="KkU-4f-8EL" firstAttribute="top" secondItem="S43-Vg-6uP" secondAttribute="bottom" id="L76-5X-Iqy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KkU-4f-8EL" secondAttribute="trailing" id="Q37-tM-Uda"/>
+                <constraint firstAttribute="bottom" secondItem="KkU-4f-8EL" secondAttribute="bottom" id="Ucz-Bz-ceV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="addBtn" destination="bbr-A6-i41" id="XKt-8N-ZvG"/>
+                <outlet property="clearBtn" destination="84K-OH-TNm" id="Svv-oV-LEt"/>
+                <outlet property="tableView" destination="KkU-4f-8EL" id="mzq-Hr-AoT"/>
+            </connections>
+            <point key="canvasLocation" x="184.80000000000001" y="-61.619190404797607"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_book_mark" width="18.5" height="18.5"/>
+        <image name="delete_book_mark" width="16.5" height="19.5"/>
+    </resources>
+</document>

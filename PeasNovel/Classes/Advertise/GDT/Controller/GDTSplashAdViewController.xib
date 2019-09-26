@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GDTSplashAdViewController" customModule="PeasNovel" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="iyT-at-0mT" id="ERJ-11-4jf"/>
+                <outlet property="containerHeight" destination="fms-yA-lyR" id="hR4-hf-N0V"/>
+                <outlet property="logoBottom" destination="n9B-hJ-K8I" id="d1h-mC-3AM"/>
+                <outlet property="splashContainerView" destination="3vA-EY-sTr" id="paa-ki-gtv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vA-EY-sTr">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="822"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyT-at-0mT">
+                    <rect key="frame" x="0.0" y="822" width="414" height="74"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lanunch" translatesAutoresizingMaskIntoConstraints="NO" id="4Ha-Tw-e35">
+                            <rect key="frame" x="97" y="0.0" width="220" height="74"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="74" id="GCC-qS-lNm"/>
+                                <constraint firstAttribute="width" constant="220" id="zmT-z7-4oo"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4Ha-Tw-e35" firstAttribute="top" secondItem="iyT-at-0mT" secondAttribute="top" id="73Y-Vc-A7f"/>
+                        <constraint firstAttribute="height" constant="74" id="fms-yA-lyR"/>
+                        <constraint firstItem="4Ha-Tw-e35" firstAttribute="centerX" secondItem="iyT-at-0mT" secondAttribute="centerX" id="zx0-h9-TrD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iyT-at-0mT" secondAttribute="trailing" id="L0J-bp-qRk"/>
+                <constraint firstItem="iyT-at-0mT" firstAttribute="top" secondItem="3vA-EY-sTr" secondAttribute="bottom" id="Tlj-8t-hYf"/>
+                <constraint firstAttribute="trailing" secondItem="3vA-EY-sTr" secondAttribute="trailing" id="Zri-TN-OmH"/>
+                <constraint firstItem="3vA-EY-sTr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zxh-Tc-Hh5"/>
+                <constraint firstItem="iyT-at-0mT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jBv-JL-O6v"/>
+                <constraint firstAttribute="bottom" secondItem="iyT-at-0mT" secondAttribute="bottom" id="n9B-hJ-K8I"/>
+                <constraint firstItem="3vA-EY-sTr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uCr-Ck-AV8"/>
+                <constraint firstItem="iyT-at-0mT" firstAttribute="top" secondItem="3vA-EY-sTr" secondAttribute="bottom" id="x1g-VI-xk7"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="lanunch" width="540" height="107"/>
+    </resources>
+</document>

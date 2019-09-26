@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="212" id="KGk-i7-Jjw" customClass="ReaderLastPageUnfinishTableViewCell" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="212"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="211.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者正在努力码字中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNm-4O-9Av">
+                        <rect key="frame" x="157.5" y="85" width="138" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZZ-em-XaR">
+                        <rect key="frame" x="169" y="113" width="115" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="6MD-56-evm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <state key="normal" title=" 更新通知我" image="rect_arrow_blank">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" image="rect_arrow"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fx8-vC-bI8">
+                        <rect key="frame" x="191.5" y="148" width="70" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="返回书架">
+                            <color key="titleColor" red="0.27450980392156865" green="0.41176470588235292" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待续未完" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vm-7L-ncc">
+                        <rect key="frame" x="173.5" y="43" width="106" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DNm-4O-9Av" firstAttribute="centerX" secondItem="6Vm-7L-ncc" secondAttribute="centerX" id="AWb-u0-5zz"/>
+                    <constraint firstItem="fx8-vC-bI8" firstAttribute="centerX" secondItem="9ZZ-em-XaR" secondAttribute="centerX" id="B1X-LC-omu"/>
+                    <constraint firstItem="DNm-4O-9Av" firstAttribute="top" secondItem="6Vm-7L-ncc" secondAttribute="bottom" constant="10" id="CgG-6U-ejv"/>
+                    <constraint firstItem="9ZZ-em-XaR" firstAttribute="centerX" secondItem="DNm-4O-9Av" secondAttribute="centerX" id="GOi-1I-BhA"/>
+                    <constraint firstItem="6Vm-7L-ncc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="43" id="YNk-sC-Myv"/>
+                    <constraint firstItem="9ZZ-em-XaR" firstAttribute="top" secondItem="DNm-4O-9Av" secondAttribute="bottom" constant="10" id="gkP-nw-s3o"/>
+                    <constraint firstItem="fx8-vC-bI8" firstAttribute="top" secondItem="9ZZ-em-XaR" secondAttribute="bottom" constant="10" id="nLw-c5-EwT"/>
+                    <constraint firstItem="6Vm-7L-ncc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rjK-uV-6zg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backBtn" destination="fx8-vC-bI8" id="Csb-AB-OW3"/>
+                <outlet property="updateBtn" destination="9ZZ-em-XaR" id="62Y-ae-YPX"/>
+            </connections>
+            <point key="canvasLocation" x="129" y="139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rect_arrow" width="18" height="18"/>
+        <image name="rect_arrow_blank" width="18" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DownloadChapterHeaderView" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="156"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IN0-za-QxW">
+                    <rect key="frame" x="14" y="67.5" width="69.5" height="21"/>
+                    <string key="text">绝霸仙尊
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lv2-9S-GWr">
+                    <rect key="frame" x="14" y="155.5" width="388" height="0.5"/>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="crr-XW-CWk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lv2-9S-GWr" secondAttribute="trailing" constant="14" id="GfR-zk-kJO"/>
+                <constraint firstItem="IN0-za-QxW" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Lzw-dQ-qz7"/>
+                <constraint firstItem="IN0-za-QxW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="TzQ-u6-fQ2"/>
+                <constraint firstAttribute="bottom" secondItem="lv2-9S-GWr" secondAttribute="bottom" id="gX9-oZ-9Fd"/>
+                <constraint firstItem="lv2-9S-GWr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="u6E-ed-SFL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="label" destination="IN0-za-QxW" id="WMK-h3-B50"/>
+            </connections>
+            <point key="canvasLocation" x="171.19999999999999" y="-76.46176911544228"/>
+        </view>
+    </objects>
+</document>

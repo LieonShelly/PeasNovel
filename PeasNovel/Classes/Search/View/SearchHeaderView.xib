@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchHeaderView" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大家都在搜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7y-sj-lHJ">
+                    <rect key="frame" x="14" y="15" width="76.5" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcT-Su-AOh">
+                    <rect key="frame" x="369" y="22" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rcT-Su-AOh" secondAttribute="height" multiplier="1:1" id="pQ5-K9-WdV"/>
+                        <constraint firstAttribute="height" constant="24" id="tcg-H4-CAO"/>
+                    </constraints>
+                    <state key="normal" image="cuowuguanbi2"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.35294117650000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rcT-Su-AOh" secondAttribute="trailing" constant="16" id="0r8-Qa-eAn"/>
+                <constraint firstItem="L7y-sj-lHJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="77t-d2-NOD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="L7y-sj-lHJ" secondAttribute="bottom" constant="2" id="P1X-fm-mPo"/>
+                <constraint firstItem="rcT-Su-AOh" firstAttribute="centerY" secondItem="L7y-sj-lHJ" secondAttribute="centerY" id="X5H-UR-aza"/>
+                <constraint firstItem="L7y-sj-lHJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="aMK-eE-kvp"/>
+                <constraint firstItem="L7y-sj-lHJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="zxC-1M-mrZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="clearButton" destination="rcT-Su-AOh" id="C9i-RO-dUb"/>
+                <outlet property="titleLabel" destination="L7y-sj-lHJ" id="GUy-LS-UeM"/>
+            </connections>
+            <point key="canvasLocation" x="165.59999999999999" y="-121.88905547226388"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cuowuguanbi2" width="35" height="35"/>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownlodCenterViewController" customModule="PeasNovel" customModuleProvider="target">
+            <connections>
+                <outlet property="lablel0" destination="jqx-A2-1JA" id="11t-DJ-Eie"/>
+                <outlet property="lablel1" destination="oiE-nE-XXr" id="7PZ-51-2Vk"/>
+                <outlet property="tableView" destination="sfe-23-h6m" id="Ylm-px-bJ6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sfe-23-h6m">
+                    <rect key="frame" x="0.0" y="20" width="375" height="599"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ivk-xd-ohl">
+                    <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dee-Oc-gSc" userLabel="shadowLabel">
+                            <rect key="frame" x="0.0" y="-3" width="375" height="0.5"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="abM-eX-SJE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已用：109MB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqx-A2-1JA">
+                            <rect key="frame" x="16" y="15" width="94" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已用：109MB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiE-nE-XXr">
+                            <rect key="frame" x="265" y="15" width="94" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="jqx-A2-1JA" firstAttribute="leading" secondItem="Ivk-xd-ohl" secondAttribute="leading" constant="16" id="B0S-bJ-xmi"/>
+                        <constraint firstItem="jqx-A2-1JA" firstAttribute="centerY" secondItem="Ivk-xd-ohl" secondAttribute="centerY" id="Idd-Cg-c3l"/>
+                        <constraint firstAttribute="trailing" secondItem="dee-Oc-gSc" secondAttribute="trailing" id="M3L-Ym-Q7J"/>
+                        <constraint firstItem="dee-Oc-gSc" firstAttribute="leading" secondItem="Ivk-xd-ohl" secondAttribute="leading" id="TtO-dd-iu6"/>
+                        <constraint firstAttribute="height" constant="48" id="bSP-0d-XbZ"/>
+                        <constraint firstAttribute="trailing" secondItem="oiE-nE-XXr" secondAttribute="trailing" constant="16" id="mJE-Pq-HPg"/>
+                        <constraint firstItem="oiE-nE-XXr" firstAttribute="centerY" secondItem="jqx-A2-1JA" secondAttribute="centerY" id="pyj-2g-GNz"/>
+                        <constraint firstItem="dee-Oc-gSc" firstAttribute="top" secondItem="Ivk-xd-ohl" secondAttribute="top" constant="-3" id="srL-on-CCx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ivk-xd-ohl" secondAttribute="trailing" id="90i-x9-eSa"/>
+                <constraint firstItem="sfe-23-h6m" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Cp5-Uk-nMY"/>
+                <constraint firstItem="Ivk-xd-ohl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HLD-ah-KEP"/>
+                <constraint firstItem="Ivk-xd-ohl" firstAttribute="top" secondItem="sfe-23-h6m" secondAttribute="bottom" id="Llb-Cr-8f8"/>
+                <constraint firstItem="sfe-23-h6m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Phj-SV-G1z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ivk-xd-ohl" secondAttribute="bottom" id="jpq-Um-xwl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sfe-23-h6m" secondAttribute="trailing" id="tTI-ka-utz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

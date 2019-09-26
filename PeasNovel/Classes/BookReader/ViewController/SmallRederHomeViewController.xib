@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SmallRederHomeViewController" customModule="PeasNovel" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBtn" destination="rHC-ae-U3a" id="FdI-W1-nBp"/>
+                <outlet property="contineBtn" destination="CH8-WW-hMH" id="0Nb-dV-JMV"/>
+                <outlet property="scrollView" destination="mR3-Mi-Drj" id="1fE-iq-xz4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mR3-Mi-Drj" customClass="MXScrollView" customModule="MXParallaxHeader">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHC-ae-U3a">
+                    <rect key="frame" x="190.5" y="829" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="ndM-Nc-u3F"/>
+                        <constraint firstAttribute="height" constant="33" id="qKc-zG-nk3"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="small_reader_close"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CH8-WW-hMH">
+                    <rect key="frame" x="167" y="788" width="80" height="26"/>
+                    <color key="backgroundColor" red="0.0" green="0.81176470590000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="bLA-2x-YHP"/>
+                        <constraint firstAttribute="height" constant="26" id="mQU-xD-Vof"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="阅读全文">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" title="已加入" image=" "/>
+                    <state key="highlighted" title=" " image=" "/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mR3-Mi-Drj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2Ax-ef-uma"/>
+                <constraint firstAttribute="bottom" secondItem="mR3-Mi-Drj" secondAttribute="bottom" id="5fV-6e-cm1"/>
+                <constraint firstItem="rHC-ae-U3a" firstAttribute="top" secondItem="CH8-WW-hMH" secondAttribute="bottom" constant="15" id="6sz-LN-KnG"/>
+                <constraint firstAttribute="trailing" secondItem="mR3-Mi-Drj" secondAttribute="trailing" id="8HI-BO-ghW"/>
+                <constraint firstItem="CH8-WW-hMH" firstAttribute="centerX" secondItem="rHC-ae-U3a" secondAttribute="centerX" id="Fbc-ZR-INC"/>
+                <constraint firstItem="mR3-Mi-Drj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G8K-ni-VHr"/>
+                <constraint firstItem="rHC-ae-U3a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VXO-Qn-Pvz"/>
+                <constraint firstAttribute="bottom" secondItem="rHC-ae-U3a" secondAttribute="bottom" constant="34" id="o49-Eh-Hfk"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name=" " width="16" height="16"/>
+        <image name="small_reader_close" width="33.5" height="33.5"/>
+    </resources>
+</document>

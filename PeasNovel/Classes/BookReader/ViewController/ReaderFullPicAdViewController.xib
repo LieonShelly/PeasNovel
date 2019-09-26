@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReaderFullPicAdViewController" customModule="PeasNovel" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBg" destination="lYF-Fg-1Tt" id="sbI-ii-CNP"/>
+                <outlet property="closeBtn" destination="LR2-Jf-x0q" id="bA5-Lr-S6T"/>
+                <outlet property="guideView" destination="2OB-Hx-55J" id="tbk-o0-Dju"/>
+                <outlet property="panView" destination="YXC-a7-Gon" id="H2J-lb-fms"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXC-a7-Gon">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYF-Fg-1Tt">
+                    <rect key="frame" x="318" y="46" width="80" height="26"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUi-DZ-jsz">
+                            <rect key="frame" x="5" y="6" width="14" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="14" id="CeO-HB-5Mj"/>
+                                <constraint firstAttribute="height" constant="14" id="L4J-R1-ym6"/>
+                            </constraints>
+                            <state key="normal" image="ad_close"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    关闭广告  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qji-lH-e88">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="26"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR2-Jf-x0q">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="26"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.2226294949" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="5Xc-et-Z5S"/>
+                        <constraint firstAttribute="bottom" secondItem="LR2-Jf-x0q" secondAttribute="bottom" id="EPL-jZ-9O5"/>
+                        <constraint firstItem="Qji-lH-e88" firstAttribute="leading" secondItem="lYF-Fg-1Tt" secondAttribute="leading" id="GNF-4Z-Y0A"/>
+                        <constraint firstItem="Qji-lH-e88" firstAttribute="top" secondItem="lYF-Fg-1Tt" secondAttribute="top" id="JzT-kE-mth"/>
+                        <constraint firstItem="LR2-Jf-x0q" firstAttribute="top" secondItem="lYF-Fg-1Tt" secondAttribute="top" id="PYM-bn-iWO"/>
+                        <constraint firstAttribute="bottom" secondItem="Qji-lH-e88" secondAttribute="bottom" id="ReF-M4-wSi"/>
+                        <constraint firstAttribute="width" constant="80" id="afq-h3-qLp"/>
+                        <constraint firstAttribute="trailing" secondItem="Qji-lH-e88" secondAttribute="trailing" id="dWR-Z4-fXf"/>
+                        <constraint firstItem="LR2-Jf-x0q" firstAttribute="leading" secondItem="lYF-Fg-1Tt" secondAttribute="leading" id="kIS-xl-QTG"/>
+                        <constraint firstItem="CUi-DZ-jsz" firstAttribute="centerY" secondItem="Qji-lH-e88" secondAttribute="centerY" id="l8U-UU-Dtz"/>
+                        <constraint firstItem="CUi-DZ-jsz" firstAttribute="leading" secondItem="lYF-Fg-1Tt" secondAttribute="leading" constant="5" id="w73-Gh-tmr"/>
+                        <constraint firstAttribute="trailing" secondItem="LR2-Jf-x0q" secondAttribute="trailing" id="zJr-fc-QyE"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-Hx-55J">
+                    <rect key="frame" x="73.5" y="401.5" width="267" height="93"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="93" id="M0v-7h-DBy"/>
+                        <constraint firstAttribute="width" constant="267" id="lmB-wm-1sb"/>
+                    </constraints>
+                    <state key="normal" image="full_pic_guide"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YXC-a7-Gon" secondAttribute="trailing" id="9z5-qz-okG"/>
+                <constraint firstItem="2OB-Hx-55J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BqL-gd-yMe"/>
+                <constraint firstItem="2OB-Hx-55J" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="EoH-rK-EeJ"/>
+                <constraint firstItem="YXC-a7-Gon" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KE7-wP-JWF"/>
+                <constraint firstAttribute="bottom" secondItem="YXC-a7-Gon" secondAttribute="bottom" id="iah-n8-PO6"/>
+                <constraint firstAttribute="trailing" secondItem="lYF-Fg-1Tt" secondAttribute="trailing" constant="16" id="kh3-5G-6vx"/>
+                <constraint firstItem="YXC-a7-Gon" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qrw-eW-yDo"/>
+                <constraint firstItem="lYF-Fg-1Tt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="46" id="yBD-C8-syo"/>
+            </constraints>
+            <point key="canvasLocation" x="160.86956521739131" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_close" width="60" height="60"/>
+        <image name="full_pic_guide" width="375.5" height="121.5"/>
+    </resources>
+</document>

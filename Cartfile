@@ -1,0 +1,61 @@
+# 如果需要添加某一个类库，放开注释执行 carthage update --platform iOS，更新完请将注释加回去
+
+#  git "ssh://git@git.qukanshu.com/ios/PKHUD.git" ~> 1.1.0
+
+
+# git@github.com:ReactiveX/RxSwift.git
+# github "ReactiveX/RxSwift" ~> 5.0
+
+# git@github.com:RxSwiftCommunity/RxDataSources.git
+#  github "RxSwiftCommunity/RxDataSources" ~> 4.0
+
+# git@github.com:RxSwiftCommunity/Action.git
+#  github "RxSwiftCommunity/Action" ~> 4.0.1
+
+# git@github.com:RxSwiftCommunity/RxRealm.git
+#  github "RxSwiftCommunity/RxRealm" ~> 1.0.0
+
+# git@github.com:RxSwiftCommunity/RxSwiftExt.git
+#  github "RxSwiftCommunity/RxSwiftExt" ~> 5.0.0
+
+
+# git@github.com:Moya/Moya.git
+# github "Moya/Moya"  ~> 14.0.0-alpha.1
+
+# git@github.com:alibaba/HandyJSON.git
+#  github "alibaba/HandyJSON" ~> 5.0.0
+
+# git@github.com:onevcat/Kingfisher.git
+#  github "onevcat/Kingfisher" ~> 5.0
+
+# git@github.com:realm/realm-cocoa.gitw
+#  github "realm/realm-cocoa"
+
+#  github "SnapKit/SnapKit" ~> 5.0.0
+
+#  github "WenchaoD/FSPagerView"
+
+# git@github.com:maxep/MXParallaxHeader.git
+#  github "maxep/MXParallaxHeader"
+
+# git "ssh://git@git.qukanshu.com/ios/StatefulViewController.git" ~> 1.0
+
+# git@github.com:AlexLittlejohn/ALCameraViewController.git
+#  github "alexlittlejohn/ALCameraViewController"
+
+#  github "ElaWorkshop/TagListView" ~> 1.0
+
+#  github "krzyzanowskim/CryptoSwift"
+
+#  github "MortimerGoro/MGSwipeTableCell"
+
+#  github "pujiaxin33/JXSegmentedView"
+
+# github "scalessec/Toast-Swift" ~> 5.0.0
+
+# github "scinfu/SwiftSoup"
+github "hackiftekhar/IQKeyboardManager"
+
+
+
+

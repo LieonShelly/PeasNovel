@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChapterConnectionAdView" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第11章 会发光的钻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hh-nk-04P">
+                    <rect key="frame" x="72" y="80" width="231" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nl0-zK-q33">
+                    <rect key="frame" x="0.0" y="155.5" width="375" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Vzm-98-BOc"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQq-Qa-2RP">
+                    <rect key="frame" x="16" y="386.5" width="343" height="45"/>
+                    <color key="backgroundColor" red="0.80392156859999997" green="0.69019607839999997" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="FG4-Ql-QiZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <state key="normal" title="0元免广告阅读">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngn-ou-19I">
+                    <rect key="frame" x="150" y="461.5" width="75" height="33"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="gMC-cX-xI0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="继续阅读">
+                        <color key="titleColor" red="0.0" green="0.81176470590000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nl0-zK-q33" secondAttribute="trailing" id="4qx-f9-WON"/>
+                <constraint firstItem="Ngn-ou-19I" firstAttribute="centerX" secondItem="fQq-Qa-2RP" secondAttribute="centerX" id="9p2-RM-AyJ"/>
+                <constraint firstItem="nl0-zK-q33" firstAttribute="top" secondItem="2hh-nk-04P" secondAttribute="bottom" constant="42" id="GQE-JU-iV9"/>
+                <constraint firstItem="nl0-zK-q33" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LN1-5Y-BlU"/>
+                <constraint firstItem="fQq-Qa-2RP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="MUX-EO-pxO"/>
+                <constraint firstItem="2hh-nk-04P" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="QHp-m3-SjS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fQq-Qa-2RP" secondAttribute="trailing" constant="16" id="SRl-56-9Lg"/>
+                <constraint firstItem="fQq-Qa-2RP" firstAttribute="top" secondItem="nl0-zK-q33" secondAttribute="bottom" constant="31" id="WNU-jU-wEj"/>
+                <constraint firstItem="Ngn-ou-19I" firstAttribute="top" secondItem="fQq-Qa-2RP" secondAttribute="bottom" constant="30" id="Xii-aa-5fw"/>
+                <constraint firstItem="2hh-nk-04P" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="te7-cO-2Kv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="adContainerView" destination="nl0-zK-q33" id="J5r-fX-y2m"/>
+                <outlet property="continueBtn" destination="Ngn-ou-19I" id="ViK-mO-MT6"/>
+                <outlet property="noAdBtn" destination="fQq-Qa-2RP" id="Q1w-cL-u9k"/>
+                <outlet property="titleLabel" destination="2hh-nk-04P" id="Pq1-zC-VWq"/>
+            </connections>
+            <point key="canvasLocation" x="-105" y="83"/>
+        </view>
+    </objects>
+</document>

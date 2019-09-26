@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BookHisRecomendCollectionViewCell" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="207"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="207"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7S-nm-hpO">
+                        <rect key="frame" x="107" y="103" width="234" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiP-QG-7AM" customClass="InsetsLabel" customModule="PeasNovel" customModuleProvider="target">
+                        <rect key="frame" x="346" y="99" width="45" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p46-88-Rep">
+                        <rect key="frame" x="107" y="10" width="43.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5S-sX-2aT" customClass="InsetsLabel" customModule="PeasNovel" customModuleProvider="target">
+                        <rect key="frame" x="405" y="99" width="45" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="EM8-VN-ZgY"/>
+                            <constraint firstAttribute="width" constant="45" id="Zyw-qb-ra7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fj-ZA-TYi">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Msz-kO-auX">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="2lG-HU-Niv"/>
+                            <constraint firstItem="Msz-kO-auX" firstAttribute="top" secondItem="5fj-ZA-TYi" secondAttribute="top" id="9Q3-jr-LmU"/>
+                            <constraint firstAttribute="bottom" secondItem="Msz-kO-auX" secondAttribute="bottom" id="LIp-ak-WH7"/>
+                            <constraint firstAttribute="trailing" secondItem="Msz-kO-auX" secondAttribute="trailing" id="Vhe-FU-ElN"/>
+                            <constraint firstAttribute="height" constant="130" id="deE-PB-0lB"/>
+                            <constraint firstItem="Msz-kO-auX" firstAttribute="leading" secondItem="5fj-ZA-TYi" secondAttribute="leading" id="yOK-PR-sgH"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBI-5K-xlw">
+                        <rect key="frame" x="107" y="40" width="343" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WiP-QG-7AM" firstAttribute="centerY" secondItem="R5S-sX-2aT" secondAttribute="centerY" id="3vG-8Z-fgz"/>
+                <constraint firstItem="p46-88-Rep" firstAttribute="leading" secondItem="5fj-ZA-TYi" secondAttribute="trailing" constant="7" id="4Kh-mt-ek8"/>
+                <constraint firstItem="LBI-5K-xlw" firstAttribute="top" secondItem="p46-88-Rep" secondAttribute="bottom" constant="9" id="4l1-57-IEk"/>
+                <constraint firstItem="P7S-nm-hpO" firstAttribute="bottom" secondItem="Msz-kO-auX" secondAttribute="bottom" constant="-10" id="7zy-9O-E55"/>
+                <constraint firstItem="P7S-nm-hpO" firstAttribute="leading" secondItem="LBI-5K-xlw" secondAttribute="leading" id="EQd-pw-Qh3"/>
+                <constraint firstItem="R5S-sX-2aT" firstAttribute="centerY" secondItem="P7S-nm-hpO" secondAttribute="centerY" id="FaD-fu-jCd"/>
+                <constraint firstItem="LBI-5K-xlw" firstAttribute="leading" secondItem="p46-88-Rep" secondAttribute="leading" id="J34-RI-2gn"/>
+                <constraint firstItem="WiP-QG-7AM" firstAttribute="leading" secondItem="P7S-nm-hpO" secondAttribute="trailing" constant="5" id="bep-nf-CsI"/>
+                <constraint firstItem="WiP-QG-7AM" firstAttribute="height" secondItem="R5S-sX-2aT" secondAttribute="height" id="bsS-Mz-jap"/>
+                <constraint firstItem="5fj-ZA-TYi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c5f-9e-F4N"/>
+                <constraint firstItem="5fj-ZA-TYi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dVZ-nQ-chz"/>
+                <constraint firstItem="R5S-sX-2aT" firstAttribute="leading" secondItem="WiP-QG-7AM" secondAttribute="trailing" constant="14" id="ePZ-YU-gJL"/>
+                <constraint firstAttribute="trailing" secondItem="LBI-5K-xlw" secondAttribute="trailing" id="mED-Nn-5Vn"/>
+                <constraint firstItem="WiP-QG-7AM" firstAttribute="width" relation="greaterThanOrEqual" secondItem="R5S-sX-2aT" secondAttribute="width" id="mXl-dv-fJp"/>
+                <constraint firstItem="p46-88-Rep" firstAttribute="top" secondItem="Msz-kO-auX" secondAttribute="top" constant="10" id="qym-Kj-5FN"/>
+                <constraint firstItem="R5S-sX-2aT" firstAttribute="trailing" secondItem="LBI-5K-xlw" secondAttribute="trailing" id="wmg-Sc-14v"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="450" height="207"/>
+            <connections>
+                <outlet property="categoryLabel" destination="WiP-QG-7AM" id="Bba-8o-lW0"/>
+                <outlet property="coverContainer" destination="5fj-ZA-TYi" id="LAS-Cw-sJG"/>
+                <outlet property="coverImageView" destination="Msz-kO-auX" id="sHg-7c-KvS"/>
+                <outlet property="desclabel" destination="LBI-5K-xlw" id="upG-Ry-FPk"/>
+                <outlet property="nameLabel" destination="P7S-nm-hpO" id="uzJ-mz-WH7"/>
+                <outlet property="processLabel" destination="R5S-sX-2aT" id="PDu-7Z-Smi"/>
+                <outlet property="titleLabel" destination="p46-88-Rep" id="9bG-HF-xPS"/>
+            </connections>
+            <point key="canvasLocation" x="310.14492753623193" y="145.64732142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

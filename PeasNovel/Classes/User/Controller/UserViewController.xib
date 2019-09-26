@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserViewController" customModule="PeasNovel" customModuleProvider="target">
+            <connections>
+                <outlet property="contactBtn" destination="UQz-l9-oiD" id="tLi-JZ-EcL"/>
+                <outlet property="tableView" destination="onI-rO-KRX" id="Pb3-Pf-327"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="onI-rO-KRX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQz-l9-oiD">
+                    <rect key="frame" x="285" y="481" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="Ouk-pB-Cc7"/>
+                        <constraint firstAttribute="height" constant="90" id="y3s-gu-SHI"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="Group 28"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="onI-rO-KRX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Gr-Sb-PBO"/>
+                <constraint firstAttribute="trailing" secondItem="onI-rO-KRX" secondAttribute="trailing" id="8wZ-IY-pLC"/>
+                <constraint firstAttribute="trailing" secondItem="UQz-l9-oiD" secondAttribute="trailing" id="QEV-EN-EuK"/>
+                <constraint firstAttribute="bottom" secondItem="onI-rO-KRX" secondAttribute="bottom" id="Utu-7K-5Jz"/>
+                <constraint firstAttribute="bottom" secondItem="UQz-l9-oiD" secondAttribute="bottom" constant="96" id="arX-Y4-Rfd"/>
+                <constraint firstItem="onI-rO-KRX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hPI-62-biz"/>
+            </constraints>
+            <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 28" width="128" height="128"/>
+    </resources>
+</document>

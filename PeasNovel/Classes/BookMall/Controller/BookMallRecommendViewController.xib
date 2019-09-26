@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookMallRecommendViewController" customModule="PeasNovel" customModuleProvider="target">
+            <connections>
+                <outlet property="backTopBtn" destination="WNp-G2-GN7" id="xg5-s9-XqT"/>
+                <outlet property="collectionView" destination="u4w-W0-y8l" id="Bo9-W3-zHJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="u4w-W0-y8l">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ddP-tw-5Cp">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNp-G2-GN7" customClass="DismissBtn" customModule="PeasNovel" customModuleProvider="target">
+                    <rect key="frame" x="305" y="548" width="70" height="70"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="FHR-qa-YFo"/>
+                        <constraint firstAttribute="width" constant="70" id="VqJ-nG-po1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WNp-G2-GN7" secondAttribute="bottom" constant="49" id="0jc-by-Wdq"/>
+                <constraint firstAttribute="trailing" secondItem="u4w-W0-y8l" secondAttribute="trailing" id="C6I-hh-fyr"/>
+                <constraint firstItem="u4w-W0-y8l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LUr-iY-Oxx"/>
+                <constraint firstItem="u4w-W0-y8l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OFF-e5-zo9"/>
+                <constraint firstAttribute="trailing" secondItem="WNp-G2-GN7" secondAttribute="trailing" id="l7D-oh-dMl"/>
+                <constraint firstAttribute="bottom" secondItem="u4w-W0-y8l" secondAttribute="bottom" id="qJu-Q2-juY"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopImageDownTextDetailCollectionViewCell" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="303"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="303"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i94-G9-NMZ">
+                        <rect key="frame" x="0.0" y="5" width="197" height="232"/>
+                        <color key="backgroundColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帝妃太妖娆 copy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oF5-i8-DQA">
+                        <rect key="frame" x="6" y="247" width="185" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="aiV-Pc-IeY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsY-kp-gXL">
+                        <rect key="frame" x="6" y="277" width="36" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="7g0-Ai-Wny"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="oF5-i8-DQA" firstAttribute="top" secondItem="i94-G9-NMZ" secondAttribute="bottom" constant="10" id="1ar-qf-V49"/>
+                <constraint firstAttribute="trailing" secondItem="i94-G9-NMZ" secondAttribute="trailing" id="Hgm-gz-KkT"/>
+                <constraint firstItem="i94-G9-NMZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="QNx-Wd-NZ4"/>
+                <constraint firstItem="JsY-kp-gXL" firstAttribute="top" secondItem="oF5-i8-DQA" secondAttribute="bottom" constant="6" id="SHU-3J-7ke"/>
+                <constraint firstItem="JsY-kp-gXL" firstAttribute="leading" secondItem="oF5-i8-DQA" secondAttribute="leading" id="Ttv-Du-ZeC"/>
+                <constraint firstItem="i94-G9-NMZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Uhh-aH-dZA"/>
+                <constraint firstItem="oF5-i8-DQA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="Zwn-LF-AQ1"/>
+                <constraint firstAttribute="trailing" secondItem="oF5-i8-DQA" secondAttribute="trailing" constant="6" id="jtQ-cK-CDS"/>
+                <constraint firstAttribute="bottom" secondItem="JsY-kp-gXL" secondAttribute="bottom" constant="10" id="rP2-pz-iQZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="197" height="303"/>
+            <connections>
+                <outlet property="coverImageView" destination="i94-G9-NMZ" id="gE1-KU-ppS"/>
+                <outlet property="detailLabel" destination="JsY-kp-gXL" id="2GH-bb-1dH"/>
+                <outlet property="titleLabel" destination="oF5-i8-DQA" id="0TJ-NO-KHa"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="183.05847076461771"/>
+        </collectionViewCell>
+    </objects>
+</document>

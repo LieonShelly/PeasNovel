@@ -1,0 +1,61 @@
+/*
+ Localizable.strings
+ PeasNovel
+ 
+ Created by lieon on 2019/1/7.
+ Copyright © 2019 NotBroken. All rights reserved.
+ */
+
+"catagory" = "Category";
+"recommend" = "Recommend";
+"userPage" = "User Center";
+"songSheet" = "Song Sheet";
+"wallet" = "Wallet";
+"favor" = "My Collection";
+"history" = "History";
+"setting" = "Setting";
+"exit" = "Logout";
+"lastFavor" = "Recent Collections";
+"lastPlay" = "Recent Plays";
+"playAll" = "Play All";
+"setting" = "Setting";
+"modifyPassword" = "Modify Password";
+"quality" = "Quality";
+"clearCache" = "Clear Cache";
+"about" = "About Us";
+"clearList" = "Clear All";
+"hotSearch" = "Hot Search";
+"searchResult" = "Search Result";
+"MemberCenter" = "Member Center";
+"membership" = "Member Renewval";
+"loginRegister" = "Register Login";
+"editUserInfo" = "Edit";
+"nickname" = "Nickname";
+"avatar" = "Avatar";
+"complete" = "Done";
+"limitTime" = "Time Limit";
+"unBindTip" = "As a visitor, you cannot bookmark and save history, please log in asap";
+"notVipTip" = "Buy members to enjoy full content";
+"requestFail" = "Request failed, Please click the button to refresh";
+"privacyAgreement" = "隐私协议";
+"userPrivacy" = "用户协议";
+"loadTitle" = "Load More";
+"loadingTitle" = "Loading";
+"networkError" = "Network Error";
+"noreDataTitle" = "Not Much More Yet";
+"label" = "Label";
+"noContent" = "No Content";
+"tourist" = "Visitor";
+
+"click" = "人气榜";
+"collect" = "收藏榜";
+"wanben" = "完本榜";
+"chargeSuccess" = "chargeSuccess";
+"setting" = "设置";
+"modifyPassword" = "修改密码";
+"quality" = "音质";
+"clearCache" = "清除缓存";
+"about" = "关于我们";
+"clearList" = "清除全部";
+"cancle" = "取消";
+"enter" = "确定";

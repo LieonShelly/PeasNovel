@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookSheetViewController" customModule="PeasNovel" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="FZz-qZ-WJs" id="KQk-yr-afa"/>
+                <outlet property="collectionView" destination="laY-hN-7uq" id="bV4-qb-MXr"/>
+                <outlet property="flurImageView" destination="iGQ-nw-fs7" id="vr9-I2-GOY"/>
+                <outlet property="nameLabel" destination="mJA-Nb-iIR" id="8YX-7l-QYw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="iGQ-nw-fs7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                </imageView>
+                <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmM-q9-u9N">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Afo-9J-dTb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJA-Nb-iIR">
+                                <rect key="frame" x="166" y="151" width="43" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mJA-Nb-iIR" firstAttribute="centerX" secondItem="Afo-9J-dTb" secondAttribute="centerX" id="9SQ-5w-0G9"/>
+                            <constraint firstAttribute="bottom" secondItem="mJA-Nb-iIR" secondAttribute="bottom" constant="34" id="I92-RH-hTH"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HmM-q9-u9N" secondAttribute="height" multiplier="16:9" id="G3j-s6-FBM"/>
+                    </constraints>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="laY-hN-7uq">
+                    <rect key="frame" x="0.0" y="211" width="375" height="456"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZQc-hr-yLe">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZz-qZ-WJs">
+                    <rect key="frame" x="319" y="20" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3D9-42-cAT"/>
+                        <constraint firstAttribute="width" secondItem="FZz-qZ-WJs" secondAttribute="height" multiplier="1:1" id="iWv-1B-uKB"/>
+                    </constraints>
+                    <state key="normal" image="guanbi-2"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HmM-q9-u9N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Ye-j6-dfR"/>
+                <constraint firstAttribute="bottom" secondItem="laY-hN-7uq" secondAttribute="bottom" id="2S7-zg-28T"/>
+                <constraint firstItem="FZz-qZ-WJs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2Sk-rS-XmP"/>
+                <constraint firstItem="laY-hN-7uq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CYe-16-Xlq"/>
+                <constraint firstItem="laY-hN-7uq" firstAttribute="top" secondItem="HmM-q9-u9N" secondAttribute="bottom" id="FVy-vp-fHc"/>
+                <constraint firstItem="HmM-q9-u9N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FcJ-aq-w3C"/>
+                <constraint firstItem="iGQ-nw-fs7" firstAttribute="top" secondItem="HmM-q9-u9N" secondAttribute="top" id="JFq-fx-Kwh"/>
+                <constraint firstItem="iGQ-nw-fs7" firstAttribute="leading" secondItem="HmM-q9-u9N" secondAttribute="leading" id="NKb-wh-5Hg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FZz-qZ-WJs" secondAttribute="trailing" constant="12" id="Urk-0O-gZw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="laY-hN-7uq" secondAttribute="trailing" id="WP2-8A-OdH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HmM-q9-u9N" secondAttribute="trailing" id="axO-BZ-EiQ"/>
+                <constraint firstItem="iGQ-nw-fs7" firstAttribute="trailing" secondItem="HmM-q9-u9N" secondAttribute="trailing" id="pJa-kY-NuA"/>
+                <constraint firstItem="iGQ-nw-fs7" firstAttribute="bottom" secondItem="HmM-q9-u9N" secondAttribute="bottom" id="vfD-BA-14Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="116" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group" width="135" height="178"/>
+        <image name="guanbi-2" width="52" height="52"/>
+    </resources>
+</document>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReaderBootomView" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="726" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyd-TB-eYw">
+                    <rect key="frame" x="30" y="0.0" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="CcT-kQ-MDX"/>
+                        <constraint firstAttribute="width" constant="60" id="hMm-hc-MeQ"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
+                    <state key="normal" image="progress_normal"/>
+                    <state key="selected" image="progress_selected">
+                        <color key="titleColor" red="0.0" green="0.81176470590000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpv-sa-xew">
+                    <rect key="frame" x="232" y="0.0" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
+                    <state key="normal" image="light_normal"/>
+                    <state key="selected" image="light_selected">
+                        <color key="titleColor" red="0.0" green="0.81176470590000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cid-AE-Tta">
+                    <rect key="frame" x="434" y="-3" width="60" height="60"/>
+                    <state key="normal" image="book_mark_normal"/>
+                    <state key="selected" image="book_mark_selected">
+                        <color key="titleColor" red="0.0" green="0.81176470590000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMw-an-32e">
+                    <rect key="frame" x="90" y="19.666666666666668" width="142" height="21.000000000000004"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="7rZ-XD-3RE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POO-jj-QM3">
+                    <rect key="frame" x="292" y="19.666666666666668" width="142" height="21.000000000000004"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6of-gK-Bpg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11y-Oz-V2I">
+                    <rect key="frame" x="494" y="19.666666666666668" width="142" height="21.000000000000004"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyN-9R-STa">
+                    <rect key="frame" x="636" y="0.0" width="60" height="50"/>
+                    <state key="normal" image="setting_normal"/>
+                    <state key="selected" image="setting_selected">
+                        <color key="titleColor" red="0.0" green="0.81176470590000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wpv-sa-xew" firstAttribute="leading" secondItem="mMw-an-32e" secondAttribute="trailing" id="14P-C7-egK"/>
+                <constraint firstItem="wpv-sa-xew" firstAttribute="top" secondItem="Hyd-TB-eYw" secondAttribute="top" id="1jF-aI-EfS"/>
+                <constraint firstItem="mMw-an-32e" firstAttribute="centerY" secondItem="Hyd-TB-eYw" secondAttribute="centerY" id="30F-AN-N77"/>
+                <constraint firstItem="POO-jj-QM3" firstAttribute="leading" secondItem="wpv-sa-xew" secondAttribute="trailing" id="3Ai-V7-H0i"/>
+                <constraint firstAttribute="trailing" secondItem="SyN-9R-STa" secondAttribute="trailing" constant="30" id="8O1-3P-x0b"/>
+                <constraint firstItem="SyN-9R-STa" firstAttribute="top" secondItem="Hyd-TB-eYw" secondAttribute="top" id="9JL-Bx-JdM"/>
+                <constraint firstItem="SyN-9R-STa" firstAttribute="width" secondItem="Hyd-TB-eYw" secondAttribute="width" id="AFv-C9-d6V"/>
+                <constraint firstItem="11y-Oz-V2I" firstAttribute="centerY" secondItem="mMw-an-32e" secondAttribute="centerY" id="D59-jL-XBc"/>
+                <constraint firstItem="SyN-9R-STa" firstAttribute="leading" secondItem="11y-Oz-V2I" secondAttribute="trailing" id="JPd-13-H1N"/>
+                <constraint firstItem="POO-jj-QM3" firstAttribute="centerY" secondItem="mMw-an-32e" secondAttribute="centerY" id="M8O-kl-Huj"/>
+                <constraint firstItem="POO-jj-QM3" firstAttribute="width" secondItem="mMw-an-32e" secondAttribute="width" id="RQM-Nh-Nqm"/>
+                <constraint firstItem="11y-Oz-V2I" firstAttribute="width" secondItem="mMw-an-32e" secondAttribute="width" id="S0V-uz-2Gl"/>
+                <constraint firstItem="wpv-sa-xew" firstAttribute="height" secondItem="Hyd-TB-eYw" secondAttribute="height" id="SD9-xm-JYg"/>
+                <constraint firstItem="Cid-AE-Tta" firstAttribute="width" secondItem="Hyd-TB-eYw" secondAttribute="width" id="V2c-qo-shj"/>
+                <constraint firstItem="Cid-AE-Tta" firstAttribute="height" secondItem="Hyd-TB-eYw" secondAttribute="height" id="VBk-bZ-1ZE"/>
+                <constraint firstItem="Hyd-TB-eYw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vdo-pu-FFI"/>
+                <constraint firstItem="11y-Oz-V2I" firstAttribute="leading" secondItem="Cid-AE-Tta" secondAttribute="trailing" id="auE-oA-fwd"/>
+                <constraint firstItem="Cid-AE-Tta" firstAttribute="top" secondItem="wpv-sa-xew" secondAttribute="top" constant="-3" id="fur-zv-YQ1"/>
+                <constraint firstItem="SyN-9R-STa" firstAttribute="height" secondItem="Hyd-TB-eYw" secondAttribute="height" constant="-10" id="fzg-qp-YeH"/>
+                <constraint firstItem="wpv-sa-xew" firstAttribute="width" secondItem="Hyd-TB-eYw" secondAttribute="width" id="oYK-3v-mwd"/>
+                <constraint firstItem="mMw-an-32e" firstAttribute="leading" secondItem="Hyd-TB-eYw" secondAttribute="trailing" id="pzG-ap-8D6"/>
+                <constraint firstItem="Cid-AE-Tta" firstAttribute="leading" secondItem="POO-jj-QM3" secondAttribute="trailing" id="wuU-Xd-jfm"/>
+                <constraint firstItem="Hyd-TB-eYw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="zlu-JB-FP0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bookMarkBtn" destination="Cid-AE-Tta" id="Pr9-qD-pwi"/>
+                <outlet property="ligghtBtn" destination="wpv-sa-xew" id="Yy2-n4-XzV"/>
+                <outlet property="progresstBtn" destination="Hyd-TB-eYw" id="ssv-GO-r2J"/>
+                <outlet property="settingBtn" destination="SyN-9R-STa" id="nXy-je-vRc"/>
+                <outlet property="top" destination="Vdo-pu-FFI" id="cFI-IO-3q3"/>
+            </connections>
+            <point key="canvasLocation" x="342.39999999999998" y="-158.12807881773401"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="book_mark_normal" width="33" height="53"/>
+        <image name="book_mark_selected" width="33" height="53"/>
+        <image name="light_normal" width="33" height="53"/>
+        <image name="light_selected" width="33" height="53"/>
+        <image name="progress_normal" width="33" height="53"/>
+        <image name="progress_selected" width="33" height="53"/>
+        <image name="setting_normal" width="33" height="53"/>
+        <image name="setting_selected" width="33" height="53"/>
+    </resources>
+</document>

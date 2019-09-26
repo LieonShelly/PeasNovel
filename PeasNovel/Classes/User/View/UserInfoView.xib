@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserInfoView" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="174"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wode_beijing" translatesAutoresizingMaskIntoConstraints="NO" id="oKS-ID-VK4">
+                    <rect key="frame" x="0.0" y="0.0" width="451" height="174"/>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JZb-CW-7ip">
+                    <rect key="frame" x="368" y="84" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="0ux-5w-Fm8"/>
+                        <constraint firstAttribute="height" constant="56" id="bzJ-g0-HZo"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="o3W-9v-dVD">
+                    <rect key="frame" x="15" y="86" width="194.5" height="52"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="橙色龙卷风刮来了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnJ-4m-vHg">
+                            <rect key="frame" x="0.0" y="0.0" width="194.5" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="豆豆ID：329384" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GC-DP-xHi">
+                            <rect key="frame" x="0.0" y="34" width="194.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0GC-DP-xHi" firstAttribute="leading" secondItem="BnJ-4m-vHg" secondAttribute="leading" id="L4w-lA-5WT"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwV-Vc-l3N">
+                    <rect key="frame" x="15" y="121" width="75" height="30"/>
+                    <state key="normal" title="点击登录 &gt;">
+                        <color key="titleColor" red="0.0" green="0.81176470590000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlX-zn-5AQ">
+                    <rect key="frame" x="15" y="86" width="194.5" height="30"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOs-7y-XKk">
+                    <rect key="frame" x="368" y="84" width="56" height="56"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hlX-zn-5AQ" firstAttribute="bottom" secondItem="BnJ-4m-vHg" secondAttribute="bottom" id="DVo-JM-QFY"/>
+                <constraint firstItem="NwV-Vc-l3N" firstAttribute="top" secondItem="BnJ-4m-vHg" secondAttribute="bottom" constant="5" id="GN0-4L-31A"/>
+                <constraint firstAttribute="trailing" secondItem="JZb-CW-7ip" secondAttribute="trailing" constant="27" id="Jpd-84-sQ3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oKS-ID-VK4" secondAttribute="trailing" id="Nfg-5G-YMJ"/>
+                <constraint firstItem="o3W-9v-dVD" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="25" id="Qu5-0k-fh3"/>
+                <constraint firstItem="oKS-ID-VK4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="TQu-9q-EU8"/>
+                <constraint firstItem="mOs-7y-XKk" firstAttribute="leading" secondItem="JZb-CW-7ip" secondAttribute="leading" id="U3l-SH-GLT"/>
+                <constraint firstItem="JZb-CW-7ip" firstAttribute="centerY" secondItem="o3W-9v-dVD" secondAttribute="centerY" id="Unj-it-rqQ"/>
+                <constraint firstItem="mOs-7y-XKk" firstAttribute="top" secondItem="JZb-CW-7ip" secondAttribute="top" id="VSm-77-1uj"/>
+                <constraint firstItem="o3W-9v-dVD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="XKQ-pn-Paf"/>
+                <constraint firstItem="hlX-zn-5AQ" firstAttribute="trailing" secondItem="BnJ-4m-vHg" secondAttribute="trailing" id="aAf-Aq-ilH"/>
+                <constraint firstItem="hlX-zn-5AQ" firstAttribute="top" secondItem="BnJ-4m-vHg" secondAttribute="top" id="grj-Mf-CjZ"/>
+                <constraint firstItem="mOs-7y-XKk" firstAttribute="trailing" secondItem="JZb-CW-7ip" secondAttribute="trailing" id="hyp-7e-LmX"/>
+                <constraint firstItem="hlX-zn-5AQ" firstAttribute="leading" secondItem="BnJ-4m-vHg" secondAttribute="leading" id="jET-BP-c4Q"/>
+                <constraint firstItem="mOs-7y-XKk" firstAttribute="bottom" secondItem="JZb-CW-7ip" secondAttribute="bottom" id="jGL-r5-OuQ"/>
+                <constraint firstAttribute="bottom" secondItem="oKS-ID-VK4" secondAttribute="bottom" id="pWc-fb-w5C"/>
+                <constraint firstItem="oKS-ID-VK4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="r8k-LA-VZy"/>
+                <constraint firstItem="NwV-Vc-l3N" firstAttribute="leading" secondItem="o3W-9v-dVD" secondAttribute="leading" id="ucx-W6-hWG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="coverView" destination="JZb-CW-7ip" id="3Ij-0u-8FI"/>
+                <outlet property="iconBtn" destination="mOs-7y-XKk" id="OxA-eP-cWi"/>
+                <outlet property="loginBtn" destination="NwV-Vc-l3N" id="vRM-en-4Q5"/>
+                <outlet property="nameBtn" destination="hlX-zn-5AQ" id="ZAs-ea-Y2m"/>
+                <outlet property="subTitleLabel" destination="0GC-DP-xHi" id="T8D-0Y-fwA"/>
+                <outlet property="titleLabel" destination="BnJ-4m-vHg" id="0QE-jC-JB1"/>
+            </connections>
+            <point key="canvasLocation" x="199.19999999999999" y="-85.457271364317847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wode_beijing" width="540" height="247"/>
+    </resources>
+</document>

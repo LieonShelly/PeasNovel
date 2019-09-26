@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookShelfHomeViewController" customModule="PeasNovel" customModuleProvider="target">
+            <connections>
+                <outlet property="scrlolBottom" destination="HH3-xo-bha" id="0FO-53-3fK"/>
+                <outlet property="scrollView" destination="vBl-LO-KSd" id="9sX-Pg-qlZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBl-LO-KSd" customClass="MXScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vBl-LO-KSd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2bL-I3-PWm"/>
+                <constraint firstAttribute="bottom" secondItem="vBl-LO-KSd" secondAttribute="bottom" id="HH3-xo-bha"/>
+                <constraint firstAttribute="trailing" secondItem="vBl-LO-KSd" secondAttribute="trailing" id="IXc-mz-8qd"/>
+                <constraint firstItem="vBl-LO-KSd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rd6-C0-YRr"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

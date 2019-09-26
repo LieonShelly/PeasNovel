@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="138" id="KGk-i7-Jjw" customClass="TwoBtnTableViewCell" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="560" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="560" height="137.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDu-Hv-mln">
+                        <rect key="frame" x="16" y="18" width="253" height="98"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pDu-Hv-mln" secondAttribute="height" multiplier="129:50" id="ytn-5i-fjF"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="jingpinshudan"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK7-mP-954">
+                        <rect key="frame" x="293" y="18" width="252.5" height="98"/>
+                        <state key="normal" backgroundImage="huodongtuijain"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="pDu-Hv-mln" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="24H-Ob-N36"/>
+                    <constraint firstItem="oK7-mP-954" firstAttribute="top" secondItem="pDu-Hv-mln" secondAttribute="top" id="8lN-7v-ZpG"/>
+                    <constraint firstAttribute="bottom" secondItem="pDu-Hv-mln" secondAttribute="bottom" constant="18" id="9oO-Zk-tQJ"/>
+                    <constraint firstAttribute="trailing" secondItem="oK7-mP-954" secondAttribute="trailing" constant="16" id="ZBZ-Eb-bWE"/>
+                    <constraint firstItem="pDu-Hv-mln" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nob-Oj-bDD"/>
+                    <constraint firstItem="oK7-mP-954" firstAttribute="leading" secondItem="pDu-Hv-mln" secondAttribute="trailing" constant="24" id="qUh-ja-Uhf"/>
+                    <constraint firstItem="oK7-mP-954" firstAttribute="width" secondItem="pDu-Hv-mln" secondAttribute="width" id="s9D-Ix-CvG"/>
+                    <constraint firstItem="oK7-mP-954" firstAttribute="bottom" secondItem="pDu-Hv-mln" secondAttribute="bottom" id="wm5-fM-eMu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="leftButton" destination="pDu-Hv-mln" id="acT-kh-hoe"/>
+                <outlet property="rightButton" destination="oK7-mP-954" id="X7H-4K-rhB"/>
+            </connections>
+            <point key="canvasLocation" x="499.19999999999999" y="200.59970014992504"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="huodongtuijain" width="232" height="98"/>
+        <image name="jingpinshudan" width="232" height="98"/>
+    </resources>
+</document>

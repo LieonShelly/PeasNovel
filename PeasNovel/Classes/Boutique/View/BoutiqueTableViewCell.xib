@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="325" id="KGk-i7-Jjw" customClass="BoutiqueTableViewCell" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="325"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="324.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBe-Lq-n0m">
+                        <rect key="frame" x="0.0" y="0.0" width="426" height="318.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hNe-5S-g60">
+                                <rect key="frame" x="16" y="16" width="394" height="223.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="223.5" id="lNs-cD-jCA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpi-Xm-4gD">
+                                <rect key="frame" x="16" y="253.5" width="394" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="V8j-j7-4K8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="&amp;#91">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="置顶]送你一本异界生存手册">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name=".PingFangSC-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJZ-cB-Wxo">
+                                <rect key="frame" x="16" y="277.5" width="394" height="31"/>
+                                <string key="text">她，从现代穿越过来的二十一世纪女当她再睁
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FJZ-cB-Wxo" firstAttribute="trailing" secondItem="Xpi-Xm-4gD" secondAttribute="trailing" id="3t1-sD-uYQ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FJZ-cB-Wxo" secondAttribute="bottom" constant="10" id="E20-YN-qeC"/>
+                            <constraint firstItem="Xpi-Xm-4gD" firstAttribute="trailing" secondItem="hNe-5S-g60" secondAttribute="trailing" id="Ej7-Ty-Ul0"/>
+                            <constraint firstItem="FJZ-cB-Wxo" firstAttribute="leading" secondItem="Xpi-Xm-4gD" secondAttribute="leading" id="JFd-5v-XcY"/>
+                            <constraint firstAttribute="trailing" secondItem="hNe-5S-g60" secondAttribute="trailing" constant="16" id="Rau-PP-ZGM"/>
+                            <constraint firstItem="hNe-5S-g60" firstAttribute="top" secondItem="aBe-Lq-n0m" secondAttribute="top" constant="16" id="ZE8-PH-gxp"/>
+                            <constraint firstItem="FJZ-cB-Wxo" firstAttribute="top" secondItem="Xpi-Xm-4gD" secondAttribute="bottom" constant="6" id="eq0-aJ-iPp"/>
+                            <constraint firstItem="Xpi-Xm-4gD" firstAttribute="top" secondItem="hNe-5S-g60" secondAttribute="bottom" constant="14" id="lMu-DH-LIb"/>
+                            <constraint firstItem="hNe-5S-g60" firstAttribute="leading" secondItem="aBe-Lq-n0m" secondAttribute="leading" constant="16" id="qEv-51-uXH"/>
+                            <constraint firstItem="Xpi-Xm-4gD" firstAttribute="leading" secondItem="hNe-5S-g60" secondAttribute="leading" id="vU4-9B-DTS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aBe-Lq-n0m" secondAttribute="bottom" constant="6" id="11k-37-VsB"/>
+                    <constraint firstItem="aBe-Lq-n0m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6b3-Js-1Ei"/>
+                    <constraint firstAttribute="trailing" secondItem="aBe-Lq-n0m" secondAttribute="trailing" id="yWO-cl-bu4"/>
+                    <constraint firstItem="aBe-Lq-n0m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ygo-Jz-HWQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coverImageView" destination="hNe-5S-g60" id="qGQ-FN-8gd"/>
+                <outlet property="imageHeight" destination="lNs-cD-jCA" id="ntN-uY-dVZ"/>
+                <outlet property="introLabel" destination="FJZ-cB-Wxo" id="pEK-k8-n2u"/>
+                <outlet property="titleLabel" destination="Xpi-Xm-4gD" id="hPc-92-gCn"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="237.03148425787109"/>
+        </tableViewCell>
+    </objects>
+</document>

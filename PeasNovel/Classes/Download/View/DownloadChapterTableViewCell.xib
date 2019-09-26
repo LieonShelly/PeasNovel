@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="DownloadChapterTableViewCell" customModule="PeasNovel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="110.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第1-20章" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7K9-Ua-Sep">
+                        <rect key="frame" x="14" y="46.5" width="62.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xo9-3p-6n1">
+                        <rect key="frame" x="237" y="54.5" width="53" height="2"/>
+                        <color key="tintColor" red="1" green="0.35294117650000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="XWV-Oj-ji7"/>
+                        </constraints>
+                    </progressView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0t-Sz-2UZ">
+                        <rect key="frame" x="220" y="44.5" width="70" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="aV9-TX-Fpa"/>
+                            <constraint firstAttribute="height" constant="22" id="bzx-rS-mml"/>
+                        </constraints>
+                        <state key="normal" title="等待下载">
+                            <color key="titleColor" red="1" green="0.35294117650000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Jr-nV-KPB">
+                        <rect key="frame" x="147.5" y="44.5" width="142.5" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下载失败，" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onb-Cc-sSA">
+                                <rect key="frame" x="0.0" y="2" width="76.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU5-pz-GqJ">
+                                <rect key="frame" x="76.5" y="0.0" width="66" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Ryi-ZL-dfy"/>
+                                    <constraint firstAttribute="width" constant="66" id="i91-Mu-PrU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal">
+                                    <string key="title">点击重试
+</string>
+                                </state>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvU-cf-irP">
+                        <rect key="frame" x="234" y="44.5" width="56" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="MgY-YU-iQg"/>
+                            <constraint firstAttribute="width" constant="56" id="R4r-hQ-7Be"/>
+                        </constraints>
+                        <state key="normal" title="下载">
+                            <color key="titleColor" red="1" green="0.35294117650000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBZ-Uv-grT">
+                        <rect key="frame" x="234" y="44.5" width="56" height="22"/>
+                        <state key="normal" title="解锁">
+                            <color key="titleColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-qt-DvV">
+                        <rect key="frame" x="234" y="44.5" width="56" height="22"/>
+                        <state key="normal" title="已下载">
+                            <color key="titleColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GPj-qt-DvV" firstAttribute="leading" secondItem="LBZ-Uv-grT" secondAttribute="leading" id="0Qh-YC-xC4"/>
+                    <constraint firstAttribute="trailing" secondItem="Xo9-3p-6n1" secondAttribute="trailing" constant="30" id="1xv-xk-zgo"/>
+                    <constraint firstItem="7K9-Ua-Sep" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="49a-n5-JnZ"/>
+                    <constraint firstItem="Xo9-3p-6n1" firstAttribute="centerY" secondItem="7K9-Ua-Sep" secondAttribute="centerY" id="5lk-0O-a1s"/>
+                    <constraint firstItem="q0t-Sz-2UZ" firstAttribute="centerY" secondItem="7K9-Ua-Sep" secondAttribute="centerY" id="FgG-bF-52M"/>
+                    <constraint firstItem="DvU-cf-irP" firstAttribute="centerY" secondItem="7K9-Ua-Sep" secondAttribute="centerY" id="Ghn-dK-7b3"/>
+                    <constraint firstItem="7K9-Ua-Sep" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IyQ-7q-teY"/>
+                    <constraint firstAttribute="trailing" secondItem="DvU-cf-irP" secondAttribute="trailing" constant="30" id="JM0-is-0aO"/>
+                    <constraint firstItem="LBZ-Uv-grT" firstAttribute="leading" secondItem="DvU-cf-irP" secondAttribute="leading" id="LFp-sX-oUi"/>
+                    <constraint firstItem="7Jr-nV-KPB" firstAttribute="centerY" secondItem="7K9-Ua-Sep" secondAttribute="centerY" id="RzI-S1-5cF"/>
+                    <constraint firstAttribute="trailing" secondItem="q0t-Sz-2UZ" secondAttribute="trailing" constant="30" id="STn-ZO-OT6"/>
+                    <constraint firstItem="GPj-qt-DvV" firstAttribute="trailing" secondItem="LBZ-Uv-grT" secondAttribute="trailing" id="SXT-8A-ap1"/>
+                    <constraint firstItem="LBZ-Uv-grT" firstAttribute="trailing" secondItem="DvU-cf-irP" secondAttribute="trailing" id="apQ-Ws-8xQ"/>
+                    <constraint firstItem="LBZ-Uv-grT" firstAttribute="bottom" secondItem="DvU-cf-irP" secondAttribute="bottom" id="dwl-nO-WZZ"/>
+                    <constraint firstItem="LBZ-Uv-grT" firstAttribute="top" secondItem="DvU-cf-irP" secondAttribute="top" id="m6J-mG-1H9"/>
+                    <constraint firstItem="GPj-qt-DvV" firstAttribute="bottom" secondItem="LBZ-Uv-grT" secondAttribute="bottom" id="rjU-Ai-Q69"/>
+                    <constraint firstItem="GPj-qt-DvV" firstAttribute="top" secondItem="LBZ-Uv-grT" secondAttribute="top" id="wnB-L1-wgw"/>
+                    <constraint firstAttribute="trailing" secondItem="7Jr-nV-KPB" secondAttribute="trailing" constant="30" id="xkK-E3-ADY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="doneBtn" destination="GPj-qt-DvV" id="hz9-XW-1pk"/>
+                <outlet property="downloadBtn" destination="DvU-cf-irP" id="PMR-xm-pv5"/>
+                <outlet property="progressView" destination="Xo9-3p-6n1" id="6Ml-oi-1NI"/>
+                <outlet property="retryBtn" destination="bU5-pz-GqJ" id="lgj-rO-bzb"/>
+                <outlet property="retryView" destination="7Jr-nV-KPB" id="THQ-0Y-XGw"/>
+                <outlet property="titleLabel" destination="7K9-Ua-Sep" id="cAt-qj-92r"/>
+                <outlet property="unlockBtn" destination="LBZ-Uv-grT" id="VBb-U2-eKU"/>
+                <outlet property="waitBtn" destination="q0t-Sz-2UZ" id="Mhd-H6-o0M"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="78.710644677661179"/>
+        </tableViewCell>
+    </objects>
+</document>
